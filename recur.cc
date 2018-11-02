@@ -1,5 +1,7 @@
 #include <iostream>
 
+uint mult( uint );
+
 //TODO #1.1: add a function prototype for fib
 uint fib( uint );
 
@@ -8,6 +10,8 @@ uint fact( uint );
 
 int main()
 {
+	std::cout << "\n This is mult( 10 ): " << mult( 10 );
+
 	//TODO: #1.2 call your fib function, print the result
 	std::cout << "\n This is fib( 10 ): " << fib( 10 );
 
@@ -15,6 +19,12 @@ int main()
 	std::cout << "\n This is fact( 10 ): " << fact( 10 );
 
 	return 0;
+}
+
+uint mult( uint n ){
+	if( n == 1 ) return 1;
+
+	return n * mult( n - 1 );
 }
 
 //TODO #2.3: add your recursive fib function from class
