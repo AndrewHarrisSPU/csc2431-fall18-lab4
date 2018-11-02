@@ -1,5 +1,6 @@
 #include <iostream>
 
+//NOT REALLY A TODO
 uint mult( uint );
 
 //TODO #1.1: add a function prototype for fib
