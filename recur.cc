@@ -1,6 +1,6 @@
 #include <iostream>
 
-//NOT REALLY A TODO
+// This comment isn't any better!
 uint mult( uint );
 
 //TODO #1.1: add a function prototype for fib
