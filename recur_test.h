@@ -44,8 +44,6 @@ void Expect( std::string file, int line, std::string name, T wanted, U got ){
 		testing::passed = false;
 		return;
 	}
-
-	testing::passed = true;
 }
 
 // Now define any call to expand with a macro (I know, bleh) to include file and line
