@@ -86,7 +86,8 @@ void Test::Run() {
 		<< " " << textStyle::title << name_ << textStyle::reset
 		<< "\n";
 
-	// set start time, execute test, set end time, calc duration
+	// reset testing::passed, set start time, execute test, set end time, calc duration
+	testing::passed = true;
 	auto start = std::chrono::high_resolution_clock::now();
 	exec_(); 
 	auto end = std::chrono::high_resolution_clock::now();
